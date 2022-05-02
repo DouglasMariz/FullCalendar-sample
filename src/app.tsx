@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 import FullCalendar from '@fullcalendar/react';
+import ptBrLocale from '@fullcalendar/core/locales/pt-br';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timegridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
@@ -32,6 +33,7 @@ const App = () => {
             <FullCalendar
                 plugins={[dayGridPlugin, interactionPlugin, timegridPlugin]}
                 initialView="dayGridMonth"
+                locales={[ptBrLocale]}
                 editable={true}
                 selectable={true}
                 selectMirror={true}
